@@ -57,7 +57,7 @@ public class Browser {
             System.out.println("¿Desea continuar ejecutando?\n s/n");  
             String continua;
             continua = entradaOpcion.next();
-            if (continua == "n")
+            if (continua.toUpperCase() == "N")
                 opcionSQql = 0;
         } //fin while
     }

@@ -43,12 +43,16 @@ public class Browser {
             
             Clases.SQLInsertSample insertando = new Clases.SQLInsertSample(Nombre,Apellido);
             insertando.Insertar();
+            break;
             case 2 :
                 SQLDeleteSample.main(args);
+                break;
             case 3 :
                 SQLSelectSample.main(args);
+                break;
             case 4 :
                 SQLUpdateSample.main(args);
+                break;
             }
             System.out.println("¿Desea continuar ejecutando?\n s/n");  
             String continua;

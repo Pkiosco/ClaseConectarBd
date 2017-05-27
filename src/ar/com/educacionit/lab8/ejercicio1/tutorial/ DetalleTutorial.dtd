@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/ DetalleTutorial.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE root SYSTEM " DetalleTutorial.dtd">
+
+    <root>
+    ...
+    </root>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT root (Ejercicio_01|Ejercicio_02|Ejercicio_03|Ejercicio_04|Ejercicio_05|Ejercicio_06)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Ejercicio_01 (Nombre|Descripcion)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Descripcion (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Ejercicio_02 (Nombre|Descripcion)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Ejercicio_03 (Nombre|Descripcion)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Ejercicio_04 (Nombre|Descripcion)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Ejercicio_05 (Nombre|Descripcion)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Ejercicio_06 (Nombre|Descripcion)*>

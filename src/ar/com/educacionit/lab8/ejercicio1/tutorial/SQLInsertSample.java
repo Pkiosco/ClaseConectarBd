@@ -26,7 +26,7 @@ public class SQLInsertSample {
         Connection laConexion = AdministradorDeConexiones.getConnection();
     
         // Arma la sentencia de inserción y la ejecuta
-        String laInsercion = "INSERT INTO alumnos (alu_id, alu_nombre, alu_apellido) VALUES (101, 'Manuel', 'Santos')";
+        String laInsercion = "INSERT INTO alumnos ( alu_nombre, alu_apellido) VALUES ( 'Manuel', 'Santos')";
         Statement stmtInsercion = laConexion.createStatement();
         stmtInsercion.execute(laInsercion);
         

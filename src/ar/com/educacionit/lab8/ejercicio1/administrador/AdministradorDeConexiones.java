@@ -28,7 +28,7 @@ public abstract class AdministradorDeConexiones {
        // String dbDriver = "com.mysql.jdbc.Driver";
         
         // Establece la conexion a utilizar contra la base de datos
-        String dbConnString = "jdbc:mysql://localhost/j2se"; //3306 puesto default 
+        String dbConnString = "jdbc:mysql://localhost/test"; //3306 puesto default 
         // Tipo de Bda Conectar - Puerto del puerto - Nombre BD
         
         // Establece el usuario de la base de datos
@@ -44,4 +44,9 @@ public abstract class AdministradorDeConexiones {
         return DriverManager.getConnection(dbConnString, dbUser, dbPassword);
     }    
     
+    public static void main (String [] args) throws Exception {
+    
+        System.out.println(getConnection().getMetaData().getDatabaseProductName());
+    }
+ 
 }

@@ -17,7 +17,7 @@ import java.sql.Statement;
 public class SQLInsertSample {
     private String alu_nombreIn;
     private String alu_apellidoIn;
-    private Connection laConexion;
+    //private Connection laConexion;
     private String Insert;
 public SQLInsertSample() throws Exception {
     }
@@ -30,7 +30,7 @@ public SQLInsertSample() throws Exception {
         
         
         public void Insertar()throws Exception{
-        laConexion = packBrowser.AdministradorDeConexiones.getConnection();
+        Connection laConexion = AdministradorDeConexiones.getConnection();
         Statement stmtInsercion = laConexion.createStatement();
         stmtInsercion.execute(Insert);
         

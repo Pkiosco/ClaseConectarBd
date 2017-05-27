@@ -30,7 +30,6 @@ public class SQLDeleteSample {
         Connection laConexion = AdministradorDeConexiones.getConnection();
         
         // Arma la sentencia de eliminación y la ejecuta
-        
         Statement stmtEliminacion = laConexion.createStatement();
         stmtEliminacion.execute(delete);
         

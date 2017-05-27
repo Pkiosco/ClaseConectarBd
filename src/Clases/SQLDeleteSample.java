@@ -15,20 +15,24 @@ import java.sql.Statement;
  * @author Sebastián S. Sanga <SebastianSanga@gmail.com>
  */
 public class SQLDeleteSample {
+    private int IdBorrar;
+    private String delete;
+    public SQLDeleteSample(int IdBorrar) {
+        this.IdBorrar = IdBorrar;
+        this.delete = "DELETE FROM alumnos WHERE alu_id = "+ this.IdBorrar;
+    }
     
     /** Creates a new instance of SQLDeleteSample */
     public SQLDeleteSample() {
     }
-    
-    public static void main(String[] args) throws Exception
-    {
+    public void Eliminar()throws Exception{
         // Define la conexion
         Connection laConexion = AdministradorDeConexiones.getConnection();
         
         // Arma la sentencia de eliminación y la ejecuta
-        String laEliminacion = "DELETE FROM alumnos WHERE alu_id = 101";
+        
         Statement stmtEliminacion = laConexion.createStatement();
-        stmtEliminacion.execute(laEliminacion);
+        stmtEliminacion.execute(delete);
         
         // Cierra el Statement y la Connection
         stmtEliminacion.close();

@@ -19,6 +19,7 @@ import java.util.Scanner;
 public class Browser {
     static String Nombre;
     static String Apellido;
+    static int Id;
     public static void main(String[] args)  throws Exception {
         int opcionSQql;
         System.out.println("Buenas tardes ingrese la opcion deseada:\n 1-Alta\n 2-Baja \n 3-Consulta \n 4-Modificar");
@@ -34,18 +35,21 @@ public class Browser {
             switch (opcionSQql)
             {
             case 1 :
-            //String Nombre;
-            //String Apellido;                
-            System.out.println("Por favor ingrese el nombre del alumno");
-            Nombre = entradaOpcion.next();
-            System.out.println("por favor ingrese el apellido del alumno");
-            Apellido = entradaOpcion.next();
-            
-            Clases.SQLInsertSample insertando = new Clases.SQLInsertSample(Nombre,Apellido);
-            insertando.Insertar();
-            break;
+                //String Nombre;
+                //String Apellido;                
+                System.out.println("Por favor ingrese el nombre del alumno");
+                Nombre = entradaOpcion.next();
+                System.out.println("por favor ingrese el apellido del alumno");
+                Apellido = entradaOpcion.next();
+
+                Clases.SQLInsertSample insertando = new Clases.SQLInsertSample(Nombre,Apellido);
+                insertando.Insertar();
+                break;
             case 2 :
-                SQLDeleteSample.main(args);
+                System.out.println("Ingrese el Id que desea eliminar");
+                Id = entradaOpcion.nextInt();
+                Clases.SQLDeleteSample borrando = new Clases.SQLDeleteSample(Id);
+                borrando.Eliminar();
                 break;
             case 3 :
                 SQLSelectSample.main(args);

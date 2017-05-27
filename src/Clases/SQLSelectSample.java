@@ -4,9 +4,9 @@
  * 
  */
 
-package ar.com.educacionit.lab8.ejercicio1.tutorial;
+package Clases;
 
-import ar.com.educacionit.lab8.ejercicio1.administrador.AdministradorDeConexiones;
+import packBrowser.AdministradorDeConexiones;
 import java.sql.Connection;
 import java.sql.ResultSet;
 

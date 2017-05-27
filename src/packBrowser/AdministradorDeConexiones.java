@@ -4,7 +4,7 @@
  *
  */
 
-package ar.com.educacionit.lab8.ejercicio1.administrador;
+package packBrowser;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

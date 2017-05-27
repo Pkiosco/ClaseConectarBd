@@ -46,13 +46,18 @@ public class Browser {
                 insertando.Insertar();
                 break;
             case 2 :
+                System.out.println("Este es el listado disponible");
+                Clases.SQLSelectSample consultando2 = new Clases.SQLSelectSample();
+                consultando2.Select();
+                
                 System.out.println("Ingrese el Id que desea eliminar");
                 Id = entradaOpcion.nextInt();
                 Clases.SQLDeleteSample borrando = new Clases.SQLDeleteSample(Id);
                 borrando.Eliminar();
                 break;
             case 3 :
-                SQLSelectSample.main(args);
+                Clases.SQLSelectSample consultando = new Clases.SQLSelectSample();
+                consultando.Select(); 
                 break;
             case 4 :
                 SQLUpdateSample.main(args);

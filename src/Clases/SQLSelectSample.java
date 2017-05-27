@@ -21,9 +21,8 @@ public class SQLSelectSample {
     /** Creates a new instance of SQLSelectSample */
     public SQLSelectSample() {
     }
-    
-    public static void main(String[] args) throws Exception
-    {
+    //public void Insertar()throws Exception{
+    public void Select() throws Exception    {
 
         // Define la conexion
         Connection laConexion = AdministradorDeConexiones.getConnection();

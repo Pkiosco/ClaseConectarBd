@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   :  DetalleTutorial.xml
+    Author     : Sebastián S. Sanga
+    Description:
+        Detallar la utilización de las distintas clases del paquete *.tutorial
+-->
+
+<root>
+    <Ejercicio_01>
+        <Nombre>SQLInsertSample.java</Nombre>
+        <Descripcion>Inserción de datos en una tabla</Descripcion>
+    </Ejercicio_01>
+    <Ejercicio_02>
+        <Nombre>SQLSelectSample.java</Nombre>
+        <Descripcion>Consulta de datos de una tabla</Descripcion>
+    </Ejercicio_02>    
+    <Ejercicio_03>
+        <Nombre>SQLUpdateSample.java</Nombre>
+        <Descripcion>Actualización de datos en una tabla</Descripcion>
+    </Ejercicio_03>        
+    <Ejercicio_04>
+        <Nombre>SQLDeleteSample.java</Nombre>
+        <Descripcion>Eliminación de datos de una tabla</Descripcion>
+    </Ejercicio_04>        
+    <Ejercicio_05>
+        <Nombre>ManejoDeExcepciones.java</Nombre>
+        <Descripcion>Ejemplo con manejo de Excepciones y una clase que maneja la conexion</Descripcion>
+    </Ejercicio_05>        
+    <Ejercicio_06>
+        <Nombre>CommitRollback.java</Nombre>
+        <Descripcion>Ejemplo de uso de commit y rollback</Descripcion>
+    </Ejercicio_06>
+</root>

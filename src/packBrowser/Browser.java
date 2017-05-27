@@ -34,14 +34,14 @@ public class Browser {
             switch (opcionSQql)
             {
             case 1 :
-            String nombre;
-            String apellido;                
+            //String Nombre;
+            //String Apellido;                
             System.out.println("Por favor ingrese el nombre del alumno");
             Nombre = entradaOpcion.next();
             System.out.println("por favor ingrese el apellido del alumno");
             Apellido = entradaOpcion.next();
             
-            Clases.SQLInsertSample insertando = new Clases.SQLInsertSample( Nombre,Apellido);
+            Clases.SQLInsertSample insertando = new Clases.SQLInsertSample(Nombre,Apellido);
             insertando.Insertar();
             case 2 :
                 SQLDeleteSample.main(args);
@@ -54,7 +54,7 @@ public class Browser {
             String continua;
             continua = entradaOpcion.next();
             if (continua == "n")
-                opcionSQql = 99;
+                opcionSQql = 0;
         } //fin while
     }
     

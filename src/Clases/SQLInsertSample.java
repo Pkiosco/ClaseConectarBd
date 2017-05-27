@@ -20,7 +20,6 @@ public class SQLInsertSample {
     private Connection laConexion;
     private String Insert;
 public SQLInsertSample() throws Exception {
-        this.laConexion = packBrowser.AdministradorDeConexiones.getConnection();
     }
     public SQLInsertSample(String alu_nombreIn, String alu_apellidoIn) throws Exception {
         this.alu_nombreIn = alu_nombreIn;
@@ -28,9 +27,11 @@ public SQLInsertSample() throws Exception {
         this.Insert = "INSERT INTO alumnos ( alu_nombre, alu_apellido)  VALUES  ( '" + this.alu_nombreIn + "'  , '" +this.alu_apellidoIn +"')";
     }
             // Arma la sentencia de inserción y la ejecuta
-        Statement stmtInsercion = laConexion.createStatement();
+        
         
         public void Insertar()throws Exception{
+        laConexion = packBrowser.AdministradorDeConexiones.getConnection();
+        Statement stmtInsercion = laConexion.createStatement();
         stmtInsercion.execute(Insert);
         
         // Cierra el Statement y la Connection

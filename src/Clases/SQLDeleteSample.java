@@ -1,19 +1,10 @@
-/*
- * SQLDeleteSample.java
- *
- *
- */
-
 package Clases;
 
 import packBrowser.AdministradorDeConexiones;
 import java.sql.Connection;
 import java.sql.Statement;
 
-/**
- *
- * @author Sebastián S. Sanga <SebastianSanga@gmail.com>
- */
+
 public class SQLDeleteSample {
     private int IdBorrar;
     private String delete;

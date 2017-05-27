@@ -20,7 +20,7 @@ public class SQLUpdateSample {
     public SQLUpdateSample() {
     }
     
-    public static void main(String[] args) throws Exception
+    public void upDate()throws Exception{
     {
         // Define la conexion
         Connection laConexion = AdministradorDeConexiones.getConnection();
